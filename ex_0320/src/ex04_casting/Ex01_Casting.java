@@ -15,7 +15,18 @@ public class Ex01_Casting {
 		System.out.println(num);
 		System.out.println(num2);
 		System.out.println(numChange);
-
+		// 형 변환은 숫자를 담을 수 있는 기본 자료형 간에만 가능
+		// 정수형,실수형 자료형 뿐만 아니라
+		// 문자이면서 동시에 숫자기도한 문자형도 가능하다.
+		
+		//자동형변환
+		//1. 작은 자료형에서 큰 자료형을 변환
+		//정수형
+		//byte ->short -> int ->long
+		//실수형
+		//float -> double
+		
+		//2.정수형이 실수형을 바뀔때
 	}
 
 }
