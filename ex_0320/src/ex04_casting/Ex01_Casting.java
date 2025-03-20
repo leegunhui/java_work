@@ -22,11 +22,34 @@ public class Ex01_Casting {
 		//자동형변환
 		//1. 작은 자료형에서 큰 자료형을 변환
 		//정수형
+		
 		//byte ->short -> int ->long
 		//실수형
 		//float -> double
 		
 		//2.정수형이 실수형을 바뀔때
+		int i = 100;
+		char c = 'a';
+		int j = c; //char형에서 int형으로 자동 변환
+		double d = i; //int형에서 double형으로 자동 변환
+		
+		System.out.println("int형 변수 j의 값 : " + j);
+		System.out.println("double형 변수 d의 값 : " + d);
+		
+		
+		//강제형변환(Demotion)
+		//(원하는 자료형)데이터 or 변수;
+		
+		//큰쪽에서 작은쪽으로 바꿀때 강제로 바꿔야한다
+		int x = 10; //4
+		byte y = (byte)x; //1byte
+		
+		System.out.println(x+"  "+y);
+		
+		//int -> byte 강제형변환
+		int l = 1000;
+		byte k = (byte)l;
+		System.out.println(l+" "+k);
 	}
 
 }
