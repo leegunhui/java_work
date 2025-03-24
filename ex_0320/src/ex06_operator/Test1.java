@@ -49,6 +49,21 @@ public class Test1 {
 
 		String result = (korean >= 40 && english >= 40 && math >= 40 && avg >= 40) ? "합격" : "불합격"; 
 		System.out.println(result);
+		
+		System.out.println("농구공의 개수는?");
+		int ball = sc.nextInt();
+		int box = ball % 5 == 0 ? ball/5 : ball/5 + 1;
+		System.out.println("필요한 상자의 수 : " + box);
+		
+		int pear = 5; 
+		int apple = 7;
+		int orange = 5;
+				
+		int fruitSum = pear + apple + orange;
+		System.out.println("하루에 생산되는 과일 수 : " + fruitSum + "개");
+				
+		float average = fruitSum / (float)24; //시간당 평균
+		System.out.println("시간당 평균 생산 갯수 : " + average + "개");
 	}
 
 }
