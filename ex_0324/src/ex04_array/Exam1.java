@@ -129,5 +129,16 @@ public class Exam1 {
 		}
 		System.out.println("-----------9번----------");
 		
+		int[] lotto = new int[6];
+		outer : for(int i = 0; i < lotto.length;){//나중을 위해 i++을 생략
+					lotto[i] = new Random().nextInt(45) + 1;
+					for(int j = 0; j < i; j++){
+						if(lotto[i] == lotto[j]){
+							continue outer;
+						}					
+					}
+					System.out.print(lotto[i] + " ");
+					i++;						
+				}
 	}
 }

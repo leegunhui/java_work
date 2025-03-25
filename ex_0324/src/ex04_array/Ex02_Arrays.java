@@ -76,7 +76,7 @@ public class Ex02_Arrays {
 		//System클래스를 이용한 깊은 복사
 		int[] newCards3 = new int[5];
 
-		System.arraycopy(cards, 0, newCards3, 0, cards.length);
+		System.arraycopy (cards, 0, newCards3, 0, cards.length);
 		
 		newCards[1] = 100;
 		
