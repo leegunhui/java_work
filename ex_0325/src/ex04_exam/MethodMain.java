@@ -22,7 +22,7 @@ public class MethodMain {
 				System.out.println(mt.count+"회 만에 정답");
 				break;
 			} else {
-				System.out.println(num);
+				System.out.println(mt.check(num));
 				mt.count++;
 			}
 			
