@@ -1,23 +1,19 @@
 package ex06_List;
 
 public class UserInfo {
-	private String id;
-	private int pw;
+	String id;
+	int pwd;
 	
 	public String getId() {
 		return id;
 	}
-	
-	public void makeId(String id) {
+	public void setId(String id) {
 		this.id = id;
 	}
-	public int getPw() {
-		return pw;
+	public int getPwd() {
+		return pwd;
 	}
-	
-	public void makePw(int pw) {
-		this.pw = pw;
-	}
-	
+	public void setPwd(int pwd) {
+		this.pwd = pwd;
+	}	
 }
-

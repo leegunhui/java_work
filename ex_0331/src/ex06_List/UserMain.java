@@ -6,22 +6,31 @@ import java.util.Scanner;
 public class UserMain {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		ArrayList<UserInfo> arr = new ArrayList<>();
-		while(true) {
-			System.out.println("아이디 생성 : ");
+		ArrayList<UserInfo> arr = new ArrayList<UserInfo>();
+
+		outer : while(true){
+
+			System.out.print("아이디 생성 : ");		
+			UserInfo ui = new UserInfo();
+			ui.setId(scan.next());
 			
-			UserInfo u = new UserInfo();
-			u.makeId(scan.next());
-			
-			System.out.println("비밀번호 입력 : ");
-			u.makePw(scan.nextInt());
-			
-			arr.add(u);
-			
-			for(int i = 0; i<arr.size(); i++) {
-				System.out.println(arr.get(i),getId());
-				System.out.println(arr.get(i),getPw());
-				System.out.println();
+			for(int i = 0; i < arr.size(); i++){
+				if(ui.getId().equals(arr.get(i).getId())){
+					System.out.println("아이디가 중복됩니다. 다른 아이디를 생성하세요");
+					continue outer;
+				}					
+			}
+
+			System.out.print("패스워드 입력 : ");
+			Scanner scan2 = new Scanner(System.in);
+			ui.setPwd(scan2.nextInt());
+
+			arr.add(ui);
+
+			for(int i = 0; i < arr.size(); i++){
+				System.out.println(arr.get(i).getId());
+				System.out.println(arr.get(i).getPwd());
+				System.out.println("------------------------");
 			}
 		}
 	}
