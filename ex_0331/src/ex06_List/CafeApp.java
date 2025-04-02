@@ -65,7 +65,7 @@ public class CafeApp {
 					else {
 						System.out.println("\n [현재 주문 내역]");
 						for(int i = 0; i<orderList.size(); i++) {
-							System.out.println((i+1) + ". "+ orderList.get(i).name + " -"+orderList.get(i).price + "원");
+							System.out.println((i+1) + ". "+ orderList.get(i).name + " - "+orderList.get(i).price + "원");
 						}
 						System.out.println("취소할 주문 번호를 입력하세요: ");
 						int cancelNumber = sc.nextInt();
