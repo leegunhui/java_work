@@ -12,12 +12,15 @@ public class SynchronizedEx implements Runnable {
 		//Synchronized클래스에 락을 걸겠다
 		//하나의 스레드가 이미 점유중이라면 다른 스레드가 사용할 수 없다
 		
+		//synchronized블록
+		//필요한 부분만 선택적으로 동기화 할 수 있어 조금 더 성능을 최적화할 수 있다
+		
 		synchronized (SynchronizedEx.class) { //this
 		
 			for(int i = 0; i < 10; i++){
 				
 				try {
-					Thread.sleep(500);
+					Thread.sleep(1000);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
