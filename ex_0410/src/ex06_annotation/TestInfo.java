@@ -12,7 +12,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface TestInfo {
 	//어노테이션의 속성은 메서드 형태로 정의한다
-	
+	String name();
+	int career() default 1;
+	String[] skills();
 	
 	//어노테이션 속성의 반환형은 제한적이다
 	//기본타입
